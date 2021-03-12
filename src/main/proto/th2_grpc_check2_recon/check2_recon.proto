@@ -16,14 +16,12 @@
 
 syntax = "proto3";
 
+import "th2_grpc_common/common.proto";
+
 option java_multiple_files = true;
-option java_package = "com.exactpro.th2.generator.grpc";
+option java_package = "com.exactpro.th2.check2recon.grpc";
 
-service FooService {
-  rpc FooRequest(Foo) returns (Foo) {
-  }
+service Check2Recon {
+  rpc submitGroupBatch (MessageGroupBatch) returns (RequestStatus) {}
 }
 
-message Foo {
-  string foo = 1;
-}
