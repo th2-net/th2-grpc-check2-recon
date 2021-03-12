@@ -13,4 +13,5 @@
 #   limitations under the License.
 
 
+th2-grpc-common~=3.0.1
 grpcio-tools==1.33.1
